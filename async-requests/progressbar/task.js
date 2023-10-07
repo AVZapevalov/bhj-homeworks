@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
   };
 
   xhr.onload = () => {
-    if (xhr.status === 200) {
+    if (xhr.status === 201) {
       alert('Load sucses!');
     } else {
       alert('Error load');
