@@ -10,7 +10,7 @@ document.getElementById("signin__form").addEventListener("submit", (e) => {
   console.log(xhr.status);
 
   xhr.onload = function () {
-    if (xhr.status === 201) {
+    if (xhr.status === 200) {
       let response = JSON.parse(xhr.responseText);
       if (response.success) {
         let userId = response.user_id;
