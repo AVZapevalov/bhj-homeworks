@@ -10,7 +10,7 @@ document.getElementById("signin__form").addEventListener("submit", (e) => {
   console.log(xhr.status);
 
   xhr.onload = function () {
-    if (xhr.status === 200) {
+    if (xhr.status === 201) {
       let response = JSON.parse(xhr.responseText);
       if (response.success) {
         let userId = response.user_id;
@@ -41,6 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
     showWelcomeBlock(userId);
   }
 });
-
-
-
