@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
 
   const xhr = new XMLHttpRequest();
 
-  xhr.open('GET', 'https://netology-slow-rest.herokuapp.com/upload.php');
+  xhr.open('POST', 'https://students.netoservices.ru/nestjs-backend/upload');
     
   xhr.upload.onprogress = (event) => {
     console.log( 'Загружено на сервер ' + event.loaded + ' байт из ' + event.total );
