@@ -1,6 +1,9 @@
-const editor = document.getElementById('editor');
+let editor = document.getElementById('editor');
 
-const savedText = localStorage.getItem('editorText');
+window.addEventListener('load', () => {
+    let text = localStorage.getItem('editorText');
+    editor.value = text;
+});
 
 editor.addEventListener('input', () => {
     localStorage.setItem('editorText', editor.value);

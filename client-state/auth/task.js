@@ -2,8 +2,6 @@ document.getElementById("signin__form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   let form = document.getElementById("signin__form");
-  let login = form.elements.login.value;
-  let password = form.elements.password.value;
 
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "https://students.netoservices.ru/nestjs-backend/auth");
